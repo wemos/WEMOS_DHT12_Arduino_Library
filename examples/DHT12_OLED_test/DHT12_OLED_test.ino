@@ -6,10 +6,6 @@
 #define OLED_RESET 0  // GPIO0
 Adafruit_SSD1306 display(OLED_RESET);
 
-
-
-
-
 DHT12 dht12;
 
 void setup() {
