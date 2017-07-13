@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring Map For Motor
+# Syntax Coloring Map For DHT12
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-SHT3X	KEYWORD1
+DHT12	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
