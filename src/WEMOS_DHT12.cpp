@@ -38,8 +38,14 @@ byte DHT12::get()
 	
 	else
 	{
+		byte scale = data[3] & 127;
+		byte sign = data[3] & 128;
+
 		// Convert the data
-		cTemp = (data[2]+(float)data[3]/10);
+		cTemp = (data[2]+(float)scale/10);
+		if (sign)
+			cTemp = -cTemp;
+		
 		fTemp = (cTemp * 1.8) + 32;
 		humidity = (data[0]+(float)data[1]/10);
 		return 0;
